@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from "styled-components";
+import { Btn } from "./conponents/Btn";
+import { InputSample } from "./conponents/InputSample";
+import { ManyInputSample } from "./conponents/ManyInputSample";
+import { Test } from "./conponents/Test";
 
-function App() {
+const App = () => {
+  // const Sex = styled.h1`
+  //   color: ${(props) => props.$sex};
+  // `;
+
+  // const Sexy = styled.h1`
+  //   color: ${(props) => props.$sexy};
+  // `;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <Sex $sex={"red"}>
+        <h1>props</h1>
+      </Sex>
+
+      <Sexy $sexy={"pink"}>
+        <h1>props</h1>
+      </Sexy> */}
+
+      {/* <Btn /> */}
+      {/* <InputSample /> */}
+      {/* <ManyInputSample /> */}
+      <Test />
+    </>
   );
-}
+};
 
 export default App;
